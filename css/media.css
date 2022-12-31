@@ -1,0 +1,650 @@
+@media only screen and (min-width: 1280px) {
+  #newac .step1other {
+    width: 23% !important;
+  }
+
+  input[type=checkbox] {
+    width: 40px !important;
+    height: 45px !important;
+  }
+
+  #Permanent {
+    height: 0 !important;
+  }
+
+  #index .nav-roll h3 {
+    color: white;
+    font-size: 23px !important;
+  }
+
+  .hwrap {
+    width: 67% !important;
+  }
+
+  .hitem {
+    width: 123% !important;
+  }
+
+  .container1 {
+    display: flex !important;
+    grid-gap: 5px;
+  }
+
+  #container {
+    width: 100% !important;
+  }
+
+  #slider-container #slider .slide {
+    width: 273px !important;
+  }
+
+  .g1 img {
+    width: 300px !important;
+  }
+
+  .card {
+    margin: 10px 0 20px 0;
+    width: 250px!important;
+    height: 250px!important;
+  }
+
+  .cards-list{
+    grid-gap: 40px!important;
+  }
+  .openacpageimg {
+    width: 700px!important;
+}
+.fir_di_open_s {
+    width: 50%;
+    margin: 40px 20px 40px 100px!important;
+}
+.subpro0{
+  width: 30%!important;
+}
+.grebdealoffeblog .card {
+    margin: 10px 0 20px 0;
+    width: 300px!important;
+    height: 270px!important;
+}
+.grabheading{
+  flex-direction: row!important;
+}
+
+#netbanklogin {
+    width: 50%!important;
+}
+.subproducts{
+    margin: 50px!important;
+  }
+  .subpro1 {
+    width: 29%!important;
+    border: 2px solid #394a8e;
+    border-radius: 10px;
+    padding: 9px!important;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #myChart{
+    max-width: 536px!important;
+  }
+
+  #myChart1{
+        width: 600px;
+    max-width: 400px!important;
+    display: block;
+    height: 400px!important;
+  }
+  .subpro1 {
+    width: 29%;
+    border: 2px solid #394a8e;
+    border-radius: 10px;
+    padding: 9px;
+    text-decoration: none;
+  }
+  .subproducts{
+    margin: 30px 10px 30px 10px;
+  }
+  .homecss {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hide-div-fet1{
+    width: 93%;
+  }
+  #newac .step1other {
+    width: 30%;
+  }
+
+  input[type=checkbox] {
+    width: 100px;
+    height: 45px;
+  }
+
+  #Permanent {
+    height: 0 !important;
+  }
+
+  #index .nav-roll h3 {
+    color: white;
+    font-size: 19px;
+  }
+
+  .hwrap {
+    width: 82%;
+  }
+
+  .hitem {
+    width: 300%;
+  }
+
+  .i2firdiv a,
+  .qa_mar_1 {
+    text-align: center;
+  }
+
+  #container {
+    width: 70%;
+  }
+
+  .container1 {
+    display: flex;
+    grid-gap: 5px;
+    flex-direction: column;
+  }
+
+  #slider-container #slider .slide {
+    width: 316px;
+  }
+
+  .g1 img {
+    width: 200px;
+  }
+
+  .card {
+    width: 150px;
+    height: 153px;
+  }
+  .contact_fir_div div {
+    bottom: 231px;
+  }
+  .contact_fir_div img{
+    height: 200px;
+    object-fit: cover;
+  }
+  .contact_fir_div{
+    height: 200px;
+  }
+  .Cont_ways {
+        grid-gap: 9px;
+  }
+  .openacpageimg {
+    width: 400px;
+}
+.fir_di_open_sav
+{
+      align-items: center;
+}
+.fir_di_open_s {
+    width: 50%;
+    margin: 40px 20px 40px 0px;
+}
+.subpro0{
+  width: 42%;
+}
+.grabheading {
+    grid-gap: 50px;
+    flex-direction: column;
+  }
+  .grabheadingSec{
+        margin-left: 85px;
+  }
+  .grebdealoffeblog .card {
+    margin: 10px 0 20px 0;
+    width: 225px;
+    height: 221px;
+}
+#netbanklogin {
+  width: 82%;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  #newac .op-ac-flex {
+    display: flex;
+    grid-gap: 10px;
+    flex-direction: column;
+  }
+
+  #newac .step1other {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #newac .steps {
+    width: 95%;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  input[type=checkbox] {
+    width: 160px;
+    height: 45px;
+  }
+
+  #Permanent {
+    height: 0 !important;
+  }
+
+  #newac .btnnext {
+    width: 95px;
+  }
+
+  .add-fun {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    padding: 32px 0 10px 0px;
+  }
+
+  .pay-status-c {
+    width: 46%;
+  }
+
+  .pay-status {
+    width: 51%;
+  }
+
+  .image404 {
+    width: 100%;
+  }
+
+  .errorm {
+    width: 52%;
+  }
+
+  #rom-mob .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  #rom-mob .nav>.nav-btn>label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 8px 10px;
+  }
+
+  #rom-mob .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  #rom-mob .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    overflow-x: hidden;
+  }
+
+  #rom-mob .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  #rom-mob .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  #rom-mob .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  #rom-mob {
+    display: block;
+  }
+
+  .nav-2 {
+    display: none;
+  }
+
+  .hwrap {
+    width: 100%;
+  }
+
+  .hitem {
+    flex-shrink: 0;
+    width: 200%;
+    box-sizing: border-box;
+    padding: 14px 1px 1px 1px;
+    text-align: center;
+  }
+
+  .nav-links {
+    z-index: 11;
+  }
+
+  nav {
+    background: #354170;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .fa {
+    padding-bottom: 10px;
+  }
+
+  .nav-d-3 {
+    padding: 10px 30px 21px 30px;
+  }
+
+  .nav-d-2 {
+    text-align: center;
+  }
+
+  .hitem {
+    padding: 5px 0 0 0;
+  }
+
+  .hwrap {
+    height: 30px;
+  }
+
+  .qc-h2 {
+    width: 90%;
+  }
+
+  .quick_apply1 {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .quick_apply {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 7px;
+  }
+
+  .index_2 {
+    flex-direction: column;
+    width: 95%;
+    align-items: center
+  }
+
+  .i2firdiv2 {
+    margin-top: 5px;
+  }
+
+  .i2firdiv1 {
+    margin-bottom: 5px;
+  }
+
+  .i2firdiv a {
+    text-align: right;
+  }
+
+  .i2firdiv {
+    width: 95%;
+  }
+
+  .right-slide {
+    display: none;
+  }
+
+  .slider_img {
+    height: auto;
+  }
+
+  #slider-container #slider .slide {
+    width: calc(11% - 39px);
+  }
+
+  #container {
+    display: grid;
+    width: 95%;
+  }
+
+  #slider-container1 .slide {
+    width: auto;
+    height: auto;
+  }
+
+  #slider-container {
+    width: 90%;
+  }
+
+  #slider-container .btn:first-of-type {
+    left: 7px;
+    top: 155px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .g1:hover .gh3 {
+    width: 368px;
+  }
+
+  .fotr_all {
+    display: flex;
+    grid-gap: 20px;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+
+  .card {
+    margin: 10px 0 20px 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 42px;
+    box-shadow: 5px 5px 19px -2px rgb(0 0 0 / 25%), -5px -5px 30px -2px rgb(0 0 0 / 22%);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .cards-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artic {
+    width: 84%;
+    margin: 0 auto;
+    color: #014a86;
+  }
+
+  .card-list {
+    flex-direction: column;
+  }
+
+  .cards-list{
+    grid-gap: 20px!important;
+  }
+
+  .contact_fir_div img{
+        width: 100%;
+    height: 297px;
+    object-fit: cover;
+  }
+  .contact_fir_div div {
+    bottom: 315px;
+    position: relative;
+  }
+  .contact_fir_div h2 {
+    color: white;
+    font-size: 34px;
+    padding-left: 22px;
+  }
+  .contact_fir_div h3 {
+    color: white;
+    font-size: 18px;
+    padding-left: 22px;
+    width: 50%;
+  }
+  .main_cont h2{
+    text-align: center;
+  }
+  .subifrmdiv {
+    width: 58%;
+        bottom: 594px;
+    margin-left: 6px;
+  }
+  .Cont_ways{
+        flex-direction: column;
+            padding: 30px 20px 30px 9px;
+  }
+  .Cont_ways_{
+    width: 90%;
+  }
+  .main_cont div p{
+        font-size: 18px;
+  }
+
+    .SocialMediaCont  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .SocialMediaCont  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  .SocialMediaCont  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  .SocialMediaCont  .pinterest {
+   display: none; 
+  }
+  .fir_di_open_sav{
+    display: flex;
+    flex-direction: column;
+  }
+  .fir_di_open_s {
+    width: 93%;
+    margin: 0px 0 40px 13px;
+  }
+  .fir_di_open_sav1 {
+       width: 85%;
+    padding: 20px;
+}
+.HideShowdetail{
+  width: 94%;
+  padding: 12px;
+}
+.hide-div-fet{
+      display: flex;
+    flex-direction: column;
+}
+.hide-div-fet h4{
+  width: 100%;
+}
+.sub_hide_div p{
+  line-height: 23px;
+}
+.sub_hide_div li{
+  list-style: none;
+}
+.fir_di .nav-d-2{
+  font-size: 15px;
+}
+.subproducts{
+      flex-direction: column;
+      grid-gap: 10px;
+}
+.subpro0{
+  width: 88%;
+}
+.subpro1{
+  width: 88%;
+}
+.subproducts {
+  margin: 15px;
+}
+#quick_apply1{
+   width: 91%!important;
+}
+.grabheading{
+      flex-direction: column;
+}
+.grabheadingSec1{
+  height: auto;
+}
+.grabheadingSec h2 {
+    font-size: 44px;
+
+}
+.grabheadingSec{
+  padding: 10px;
+}
+.grabheading{
+  grid-gap: 30px;
+}
+.bankchel {
+  margin: 0 0 30px 0;
+}
+.grabheadingSec00 {
+    width: 90%;
+    margin: 0 auto;
+}
+#netbanklogin {
+  width: 80%;
+}
+.dd-ff{
+      flex-direction: column;
+}
+.lininnetban{
+  width: 80%;
+}
+.contactus{
+  width: 90%;
+}
+.homecss {
+    display: flex;
+    flex-direction: column;
+}
+.chartinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tableother {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+}

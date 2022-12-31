@@ -1,0 +1,308 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 18, 2022 at 07:23 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `bdicbank`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account`
+--
+
+CREATE TABLE `account` (
+  `id` int(11) NOT NULL,
+  `userid` bigint(10) DEFAULT NULL,
+  `accountno` bigint(15) DEFAULT NULL,
+  `mobile` bigint(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `pan` varchar(10) DEFAULT NULL,
+  `aadhaar` varchar(12) DEFAULT NULL,
+  `branch` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `birthday` date NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `merital` varchar(10) NOT NULL,
+  `fathername` varchar(30) DEFAULT NULL,
+  `mothername` varchar(30) DEFAULT NULL,
+  `flatno` varchar(10) NOT NULL,
+  `roadname` varchar(30) NOT NULL,
+  `landmark` varchar(30) NOT NULL,
+  `zipcode` int(6) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `state` varchar(20) NOT NULL,
+  `employment` varchar(50) NOT NULL,
+  `income` int(10) NOT NULL,
+  `profilephoto` varchar(250) NOT NULL,
+  `adharphoto` varchar(250) NOT NULL,
+  `panphoto` varchar(250) NOT NULL,
+  `signphoto` varchar(250) NOT NULL,
+  `fund` int(10) NOT NULL,
+  `loan` int(10) NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT 'pending',
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `account`
+--
+
+INSERT INTO `account` (`id`, `userid`, `accountno`, `mobile`, `email`, `pan`, `aadhaar`, `branch`, `name`, `birthday`, `gender`, `merital`, `fathername`, `mothername`, `flatno`, `roadname`, `landmark`, `zipcode`, `city`, `state`, `employment`, `income`, `profilephoto`, `adharphoto`, `panphoto`, `signphoto`, `fund`, `loan`, `status`, `password`) VALUES
+(1, 501004501, 50100451889301, 9081132528, 'MRRUTVIKVASOYA1@GMAIL.COM', 'CAFPV1254A', '576390458932', 'YogiChowk', 'VASOYA RUTVIK DILIPBHAI', '2002-11-04', 'Male', 'UnMarried', 'DILIPBHAI VASOYA ', 'HANSABEN VASOYA ', 'B-9', 'SHANKARNAGAR', 'PUNAGAM', 395010, 'SURAT', 'GUJARAT', 'Student', 50000, 'proofs/photo.jpeg', 'aadhar-card.png', 'banner.jpg', 'rutviksign.jpeg', 100000, 7000, 'Approved', 'rutvik@123'),
+(2, 501004502, 50100451889302, 8460621361, 'DHRUVAKBARI313@GMAIL.COM', 'ASZXD1234A', '578978541236', 'SURAT CITY', 'DHRUV PARESHBHAI AKBARI ', '2002-01-12', 'Male', 'UnMarried', 'PARESHBHAI AKBARI ', 'CHANDRIKABEN AKBARI', '303', 'OPERAROW HOUSE', 'KHOLVAD', 394110, 'SURAT', 'GUJARAT', 'Salaried', 24000, 'proofs/a.jfif', 'banner.jpg', 'download.jfif', 'signature.png', 24000, 0, 'Closed', 'ASZXD1234A'),
+(4, 501004503, 50100451889303, 8754213698, 'NALINI@GMAIL.COM', 'AAJPW1592Q', '875978963214', 'Sarthana', 'NALINI VIJAY WARLIKAR', '1990-06-05', 'Female', 'Married', 'MOHANBHAI NARA', 'MINABEN NARA', 'A-85', 'KANAL PARK', 'NMOJANEAR ', 110011, 'SIRI', 'DELHI', 'Salaried', 20000, 'proofs/photo.jpg', 'ad.jpg', 'pan.jpg', 'signature.png', 10000, 15000, 'Approved', '501004503');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phonenumber` varchar(10) NOT NULL,
+  `Adminid` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `name`, `email`, `phonenumber`, `Adminid`, `password`) VALUES
+(1, 'Rutvik', 'mrrutvikvasoya1@gmail.com', '9081132528', 'rutvik', '28252aef3b47d0c836d23df82ea24ea5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cheqbook_req`
+--
+
+CREATE TABLE `cheqbook_req` (
+  `id` int(11) NOT NULL,
+  `account` bigint(20) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `pincode` int(6) NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT 'Pending',
+  `Orderid` bigint(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `cheqbook_req`
+--
+
+INSERT INTO `cheqbook_req` (`id`, `account`, `name`, `email`, `pincode`, `status`, `Orderid`) VALUES
+(2, 50100451889301, 'VASOYA RUTVIK DILIPBHAI', '', 395010, 'Processed', 352896314),
+(3, 50100451889302, 'DHRUV PARESHBHAI AKBARI ', '', 394110, 'Processed', 15555151),
+(4, 50100451889303, 'NALINI VIJAY ', 'NALINI@GMAIL.COM', 110011, 'Pending', 0),
+(5, 50100451889303, 'NALINI VIJAY ', 'NALINI@GMAIL.COM', 110011, 'Pending', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactus`
+--
+
+CREATE TABLE `contactus` (
+  `id` int(11) NOT NULL,
+  `mobile` bigint(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `userid` bigint(10) NOT NULL,
+  `writeh` varchar(500) NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT 'Pending'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contactus`
+--
+
+INSERT INTO `contactus` (`id`, `mobile`, `email`, `userid`, `writeh`, `status`) VALUES
+(1, 9081132528, 'MRRUTVIKVASOYA1@GMAIL.COM', 50104501, 'HELLO I AM NOT RECIVED MY DEBIT CARD , CHEQUE BOOK OR WELCOME KIT OF THE BANK', 'Solved'),
+(2, 8758969093, 'KISHANSAVALIYA9083@GMAIL.COM', 0, 'I AM FACING SOME ERROR IN OPENI ACCOUNTNG', 'Solved'),
+(3, 8754213698, 'NALINI@GMAIL.COM', 501004503, 'LOAN IS NOT APPROVED', 'Pending');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loan_enquiry`
+--
+
+CREATE TABLE `loan_enquiry` (
+  `id` int(11) NOT NULL,
+  `userid` bigint(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `balance` bigint(10) NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT 'Pending',
+  `loanamount` bigint(10) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `loan_enquiry`
+--
+
+INSERT INTO `loan_enquiry` (`id`, `userid`, `name`, `balance`, `status`, `loanamount`, `email`) VALUES
+(1, 501004502, 'DHRUV PARESHBHAI AKBARI ', 24000, 'Rejected', 0, 'mrrutvikvasoya@gmail.com'),
+(2, 501004501, 'VASOYA RUTVIK DILIPBHAI', 55863, 'Approved', 5000, 'DHRUVAKBARI313@GMAIL.COM'),
+(3, 501004503, 'HARMIT JSYANTIBHAI DAVRA', 90000, 'Pending', 0, 'HARMITDAVRA111@GMAIL.COM'),
+(4, 501004503, 'HARMIT JSYANTIBHAI DAVRA', 90000, 'Rejected', 0, 'HARMITDAVRA111@GMAIL.COM'),
+(5, 501004503, 'NALINI VIJAY ', 10000, 'Approved', 15000, 'NALINI@GMAIL.COM');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loan_query`
+--
+
+CREATE TABLE `loan_query` (
+  `id` int(11) NOT NULL,
+  `userid` bigint(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `query` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `loan_query`
+--
+
+INSERT INTO `loan_query` (`id`, `userid`, `name`, `query`) VALUES
+(1, 501004502, 'DHRUV PARESHBHAI AKBARI ', 'I apply For loan, but my loan is not Approved pls help me.'),
+(2, 501004503, 'NALINI VIJAY ', 'when approved my loan');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subemail`
+--
+
+CREATE TABLE `subemail` (
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `Status` varchar(20) NOT NULL DEFAULT 'Subscribed'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `subemail`
+--
+
+INSERT INTO `subemail` (`id`, `email`, `Status`) VALUES
+(1, 'MRRUTVIKVASOYA1@GMAIL.COM', 'Subscribed'),
+(2, 'KISHANSAVALIYA9083@GMAIL.COM', 'Subscribed'),
+(3, 'MEET@GMAIL.COM', 'Subscribed');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `account`
+--
+ALTER TABLE `account`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cheqbook_req`
+--
+ALTER TABLE `cheqbook_req`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `contactus`
+--
+ALTER TABLE `contactus`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `loan_enquiry`
+--
+ALTER TABLE `loan_enquiry`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `loan_query`
+--
+ALTER TABLE `loan_query`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `subemail`
+--
+ALTER TABLE `subemail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `account`
+--
+ALTER TABLE `account`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `cheqbook_req`
+--
+ALTER TABLE `cheqbook_req`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `contactus`
+--
+ALTER TABLE `contactus`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `loan_enquiry`
+--
+ALTER TABLE `loan_enquiry`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `loan_query`
+--
+ALTER TABLE `loan_query`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `subemail`
+--
+ALTER TABLE `subemail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
