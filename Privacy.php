@@ -2,7 +2,7 @@
 session_start();
 session_destroy();
 ?>
-
+<!-- bhai aaam chalu kar -->
 <!DOCTYPE html>
 <html>
 <head>
