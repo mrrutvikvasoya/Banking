@@ -43,10 +43,5 @@ This project aims to develop a comprehensive Banking Management System designed 
 - Implementing mobile banking support.
 - Continuous optimization for better performance.
 
-## Contributors
-- Vasoya Rutvik Dilipbhai
-- Pansheriya Hiren Himmatbhai
-- Savaliya Kishan Haribhai
-
 ## License
 This project is licensed under the MIT License.
